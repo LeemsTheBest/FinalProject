@@ -10,7 +10,7 @@ var max_speed = 6
 var timer = null
 var bullet_delay = 0.05
 var can_shoot = true
-
+onready var animation_player = $AnimationPlayer
 onready var end_of_gun = $Endofgun
 #onready var Bullets = get_node("/root/Game/Bullets")
 var Bullet2 = load("res://Bullets/Bullet2.tscn")
@@ -54,7 +54,7 @@ func _physics_process(_delta):
 		get_tree().get_root().call_deferred("add_child",bullet2_inst)
 		#Starts timer after bullet is fired to prevent shooting until timer is up
 		timer.start()
-		
+		animation_player.play("Muzzle_Flash")
 
 	
 	

@@ -10,7 +10,8 @@ var max_speed = 6
 var timer = null
 var bullet_delay = 0.15
 var can_shoot = true
-
+#Instantiating animation player for muzzle flash.
+onready var animation_player = $AnimationPlayer
 onready var end_of_gun = $Endofgun
 #onready var Bullets = get_node("/root/Game/Bullets")
 var Bullet3 = load("res://Bullets/Bullet3.tscn")
@@ -38,6 +39,7 @@ func _physics_process(_delta):
 	#be fired again until timer is up.
 	if (Input.is_action_pressed("shoot") && can_shoot):
 		shoot()
+	#Starts timer after bullet is fired to prevent shooting until timer is up
 		timer.start()
 
 	
@@ -62,8 +64,8 @@ func shoot():
 		bullet3_inst.global_rotation = end_of_gun.global_rotation +PI/2 
 					
 		get_tree().get_root().call_deferred("add_child",bullet3_inst)
-			#Starts timer after bullet is fired to prevent shooting until timer is up
-		
+	#Added muzzle flash		
+	animation_player.play("MuzzleFlash")
 			
 	
 func get_input():

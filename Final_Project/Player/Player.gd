@@ -9,7 +9,8 @@ var timer = null
 var bullet_delay = 0.25
 var can_shoot = true
 onready var end_of_gun = $Endofgun
-#onready var Bullets = get_node("/root/Game/Bullets")
+onready var animation_player = $AnimationPlayer
+
 var Bullet1 = load("res://Bullets/Bullet1.tscn")
 
 func _ready():
@@ -17,7 +18,7 @@ func _ready():
 	#it to run only once per shoot input.
 	#Connecting timer
 	timer = Timer.new()
-	#timer.set_one_shot(true)
+	timer.set_one_shot(true)
 	timer.set_wait_time(bullet_delay)
 	timer.connect("timeout",self,"on_timeout_complete")
 	add_child(timer)
@@ -34,6 +35,7 @@ func _physics_process(_delta):
 	look_at(get_global_mouse_position())
 	#Player shoot
 	if (Input.is_action_pressed("shoot") &&can_shoot):
+	#Could be in shoot function like other play scripts
 		can_shoot = false
 		var bullet1_inst = Bullet1.instance()
 		#add_child(bullet1_inst)
@@ -45,7 +47,7 @@ func _physics_process(_delta):
 		bullet1_inst.global_rotation = end_of_gun.global_rotation +PI/2
 		get_tree().get_root().call_deferred("add_child",bullet1_inst)
 		timer.start()
-		
+		animation_player.play("MuzzleFlash")
 
 	
 func on_timeout_complete():
