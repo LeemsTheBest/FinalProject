@@ -8,3 +8,10 @@ func _physics_process(_delta):
 	
 func set_direction(direction):
 	self.direction = direction
+	
+
+
+
+func _on_Bullet1_body_entered(body):
+	queue_free()
+	

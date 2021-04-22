@@ -3,7 +3,7 @@
 [ext_resource path="res://Player/Player.tscn" type="PackedScene" id=1]
 
 [node name="Game" type="Node2D"]
-position = Vector2( 225.799, 133.473 )
+position = Vector2( 220.748, 135.157 )
 
 [node name="Player" parent="." instance=ExtResource( 1 )]
 position = Vector2( -100.763, -4.65994 )
