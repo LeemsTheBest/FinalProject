@@ -1,13 +1,13 @@
 extends KinematicBody2D
 
-signal player_fired_bullet(bullet,position,direction)
+#signal player_fired_bullet(bullet,position,direction)
 
 var velocity = Vector2.ZERO
 var speed = 0.5
 var max_speed = 6
-var bullet_speed = 2
+
 onready var end_of_gun = $Endofgun
-onready var Bullets = get_node("/root/Game/Bullets")
+#onready var Bullets = get_node("/root/Game/Bullets")
 var Bullet1 = load("res://Bullets/Bullet1.tscn")
 
 func _ready():
