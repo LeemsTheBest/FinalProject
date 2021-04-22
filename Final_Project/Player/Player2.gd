@@ -8,7 +8,7 @@ var velocity = Vector2.ZERO
 var speed = 0.5
 var max_speed = 6
 var timer = null
-var bullet_delay = 0.2
+var bullet_delay = 0.05
 var can_shoot = true
 
 onready var end_of_gun = $Endofgun
@@ -16,8 +16,11 @@ onready var end_of_gun = $Endofgun
 var Bullet2 = load("res://Bullets/Bullet2.tscn")
 
 func _ready():
+	#Instantiating timer signal to the length of bullet delay and allowing
+	#it to run only once per shoot input.
+	#Connecting timer
 	timer = Timer.new()
-	timer.set_one_shot(true)
+	#timer.set_one_shot(true)
 	timer.set_wait_time(bullet_delay)
 	timer.connect("timeout",self,"on_timeout_complete")
 	add_child(timer)
@@ -51,7 +54,7 @@ func _physics_process(_delta):
 		get_tree().get_root().call_deferred("add_child",bullet2_inst)
 		#Starts timer after bullet is fired to prevent shooting until timer is up
 		timer.start()
-		print("Player shot!")
+		
 
 	
 	
