@@ -8,7 +8,7 @@ var velocity = Vector2.ZERO
 var speed = 0.5
 var max_speed = 6
 var timer = null
-var bullet_delay = 0.15
+var bullet_delay = 0.25
 var can_shoot = true
 #Instantiating animation player for muzzle flash.
 onready var animation_player = $AnimationPlayer
