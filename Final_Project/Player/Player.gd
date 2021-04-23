@@ -13,6 +13,8 @@ onready var animation_player = $AnimationPlayer
 
 var Bullet1 = load("res://Bullets/Bullet1.tscn")
 
+
+
 func _ready():
 	#Instantiating timer signal to the length of bullet delay and allowing
 	#it to run only once per shoot input.
@@ -48,8 +50,8 @@ func _physics_process(_delta):
 		get_tree().get_root().call_deferred("add_child",bullet1_inst)
 		timer.start()
 		animation_player.play("MuzzleFlash")
-
 	
+	 
 func on_timeout_complete():
 	can_shoot = true	
 	
