@@ -20,5 +20,6 @@ func _on_Bullet2_body_entered(body):
 		body.take_damage(damage)
 	explosion_instance.position = get_global_position()
 	get_tree().get_root().add_child(explosion_instance)
+	explosion_instance.playing = true
 	queue_free()
 	

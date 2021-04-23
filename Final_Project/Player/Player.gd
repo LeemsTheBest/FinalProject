@@ -4,7 +4,7 @@ extends KinematicBody2D
 
 var velocity = Vector2.ZERO
 var speed = 0.5
-var max_speed = 6
+var max_speed = 4
 var timer = null
 var bullet_delay = 0.25
 var can_shoot = true
