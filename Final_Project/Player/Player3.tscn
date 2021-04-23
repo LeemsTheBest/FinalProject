@@ -1,8 +1,8 @@
 [gd_scene load_steps=5 format=2]
 
-[ext_resource path="res://Assests/Char-needed/survivor-shoot_shotgun_0.png" type="Texture" id=1]
+[ext_resource path="res://Assets/Char-needed/survivor-shoot_shotgun_0.png" type="Texture" id=1]
 [ext_resource path="res://Player/Player3.gd" type="Script" id=2]
-[ext_resource path="res://Assests/Char-needed/shotLarge.png" type="Texture" id=3]
+[ext_resource path="res://Assets/Char-needed/shotLarge.png" type="Texture" id=3]
 
 [sub_resource type="Animation" id=1]
 resource_name = "MuzzleFlash"

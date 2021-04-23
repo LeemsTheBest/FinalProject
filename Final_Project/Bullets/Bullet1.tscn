@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=2]
 
-[ext_resource path="res://Assests/Char-needed/Pistolbull.png" type="Texture" id=1]
+[ext_resource path="res://Assets/Char-needed/Pistolbull.png" type="Texture" id=1]
 [ext_resource path="res://Bullets/Bullet1.gd" type="Script" id=2]
 
 [sub_resource type="RectangleShape2D" id=1]
