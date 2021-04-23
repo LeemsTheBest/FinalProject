@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=2]
 
-[ext_resource path="res://Assests/Char-needed/riflebull.png" type="Texture" id=1]
+[ext_resource path="res://Assets/Char-needed/riflebull.png" type="Texture" id=1]
 [ext_resource path="res://Bullets/Bullet2.gd" type="Script" id=2]
 
 [node name="Bullet2" type="Area2D"]
