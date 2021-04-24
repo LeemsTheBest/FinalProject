@@ -33,6 +33,14 @@ https://www.youtube.com/watch?v=6_xTDu6yvCY&list=PL3V-_hJz2cV8INa2MH5L89YPNMBDjU
 
 https://www.youtube.com/watch?v=N6geUSN7aWE&list=PL3V-_hJz2cV8INa2MH5L89YPNMBDjUEMx&index=3 UI
 
+Christopher Kidd assets/sources:
+
+https://www.reasonstudios.com/ - Music
+
+https://www.audacityteam.org/ - Sound effects (1)
+
+https://soundbible.com/ - Sound effects (2)
+
 ## References
 Jason Francis
 
