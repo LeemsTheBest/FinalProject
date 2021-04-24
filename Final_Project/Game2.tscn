@@ -1,12 +1,12 @@
 [gd_scene load_steps=8 format=2]
 
-[ext_resource path="res://Music/Level1 music.gd" type="Script" id=1]
+[ext_resource path="res://Assets/Level2 music.wav" type="AudioStream" id=1]
 [ext_resource path="res://Game2.gd" type="Script" id=2]
 [ext_resource path="res://Player/Camera2D.gd" type="Script" id=3]
 [ext_resource path="res://Enemies/Enemy1.tscn" type="PackedScene" id=4]
 [ext_resource path="res://Levels/Level2.tscn" type="PackedScene" id=5]
 [ext_resource path="res://Enemies/Spawner.tscn" type="PackedScene" id=6]
-[ext_resource path="res://Assets/Level 1 (WAVE).wav" type="AudioStream" id=7]
+[ext_resource path="res://AudioStreamPlayer.gd" type="Script" id=7]
 
 [node name="Game" type="Node2D"]
 script = ExtResource( 2 )
@@ -40,10 +40,10 @@ __meta__ = {
 }
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
-stream = ExtResource( 7 )
+stream = ExtResource( 1 )
 volume_db = -12.866
 autoplay = true
-script = ExtResource( 1 )
+script = ExtResource( 7 )
 
 [node name="Node2D" type="Node2D" parent="."]
 
