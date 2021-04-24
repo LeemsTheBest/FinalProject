@@ -2,7 +2,7 @@ extends Area2D
 var speed = 20
 var direction := Vector2.ZERO
 var explosion = load("res://Bullets/Explosion.tscn")
-var damage = 20
+var damage = 30
 func _physics_process(_delta):
 	if direction != Vector2.ZERO:
 		var velocity = direction*speed
