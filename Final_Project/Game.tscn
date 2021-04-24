@@ -1,11 +1,10 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://Game.gd" type="Script" id=1]
 [ext_resource path="res://Music/Level1 music.gd" type="Script" id=2]
 [ext_resource path="res://Levels/Level1.tscn" type="PackedScene" id=3]
 [ext_resource path="res://Player/Camera2D.gd" type="Script" id=4]
 [ext_resource path="res://Assets/Level 1 (WAVE).wav" type="AudioStream" id=5]
-[ext_resource path="res://Enemies/Spawner.tscn" type="PackedScene" id=6]
 [ext_resource path="res://Enemies/Enemy1.tscn" type="PackedScene" id=7]
 
 [node name="Game" type="Node2D"]
@@ -47,9 +46,9 @@ script = ExtResource( 2 )
 
 [node name="Node2D" type="Node2D" parent="."]
 
-[node name="Node2D" parent="Node2D" instance=ExtResource( 6 )]
-position = Vector2( 941.804, 2428.51 )
-
 [node name="Node2D2" parent="Node2D" instance=ExtResource( 7 )]
 position = Vector2( 387.885, 929.211 )
+
+[node name="Node2D" parent="Node2D" instance=ExtResource( 7 )]
+position = Vector2( 393.675, 1709.63 )
 [connection signal="finished" from="AudioStreamPlayer" to="AudioStreamPlayer" method="_on_AudioStreamPlayer_finished"]

@@ -10,3 +10,4 @@ func _ready():
 	Player_inst.global_position = player_camera.global_position
 	Global.cur_player_instance = Player_inst
 	add_child(Player_inst)
+	get_node("/root/Game/UI/Score").text = "Score: " +str(Global.score)

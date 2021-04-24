@@ -11,3 +11,4 @@ func _ready():
 	Global.cur_player_instance = Player_inst
 	add_child(Player_inst)
 	Global.reset()
+	get_node("/root/Game/UI/Score").text = "Score: " +str(Global.score)
