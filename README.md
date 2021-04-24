@@ -12,14 +12,8 @@ Liam: Levels took longer to make than I thought, until I discovered the copy pas
 
 Wyeth: My first major difficulty was making the character shoot while following the mouse. I was able to have a player shoot in a straight line but struggled to get the player to shoot when my mouse pointed. Another difficulty was figuring out how to rotate the bullets so that they pointed towards my mouse every time they shot. Also, adding a timer to the gun's fire rate took some time to tweak and fully instantiate as it shot the bullets.
 ## Implementation
--3 Levels With Different Themes
-
-[7 points] A playable game
-[2] No syntax or runtime errors
-[3] Is a reflection of the theme
-[5] It is obvious that every member contributed
-[2] It is appropriately licensed, and the README.md conforms to the specified format
-[1] Screenshot or gameplay video
+Liam: 3 Levels With Different Themes
+Wyeth: Moveable character with different weapon skins and bullets, muzzle flash and impact explosisions, beginning and end scenes, score and player health. 
 
 Liam Assets:
 
