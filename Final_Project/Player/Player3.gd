@@ -16,7 +16,7 @@ onready var animation_player = $AnimationPlayer
 onready var end_of_gun = $Endofgun
 #onready var Bullets = get_node("/root/Game/Bullets")
 var Bullet3 = load("res://Bullets/Bullet3.tscn")
-
+onready var audio_player = $AudioStreamPlayer2D
 func _ready():
 	#Instantiating timer signal to the length of bullet delay and allowing
 	#it to run only once per shoot input.
@@ -58,6 +58,8 @@ func _physics_process(delta):
 	
 func shoot():
 	can_shoot = false
+	audio_player.play()
+	
 	#Instancing bullet into scene
 	
 	#All below are position and rotation lines to position the bullet at the end of 

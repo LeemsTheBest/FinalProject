@@ -12,7 +12,7 @@ onready var end_of_gun = $Endofgun
 onready var animation_player = $AnimationPlayer
 
 var Bullet1 = load("res://Bullets/Bullet1.tscn")
-
+onready var audio_player = $AudioStreamPlayer2D
 
 
 func _ready():
@@ -62,6 +62,7 @@ func take_damage(damage):
 		get_tree().change_scene("res://Game2.tscn")
 		
 func shoot():
+	audio_player.play()
 	can_shoot = false
 	var bullet1_inst = Bullet1.instance()
 		#add_child(bullet1_inst)

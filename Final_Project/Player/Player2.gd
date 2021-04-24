@@ -12,6 +12,7 @@ var bullet_delay = 0.05
 var can_shoot = true
 onready var animation_player = $AnimationPlayer
 onready var end_of_gun = $Endofgun
+onready var audio_player = $Endofgun/AudioStreamPlayer2D
 
 #onready var Bullets = get_node("/root/Game/Bullets")
 var Bullet2 = load("res://Bullets/Bullet2.tscn")
@@ -65,6 +66,7 @@ func shoot():
 	#All below are position and rotation lines to position the bullet at the end of 
 	#the characters gun and make sure it is rotated properly.
 	#The bullet is then added as a child in the scene
+	audio_player.play()
 	var target = get_global_mouse_position()
 	bullet2_inst.global_position = end_of_gun.global_position
 	var direction_to_mouse = end_of_gun.global_position.direction_to(target).normalized()
@@ -74,6 +76,7 @@ func shoot():
 	get_tree().get_root().call_deferred("add_child",bullet2_inst)
 	#Starts timer after bullet is fired to prevent shooting until timer is up
 	animation_player.play("Muzzle_Flash")
+	
 func on_timeout_complete():
 	can_shoot = true
 func take_damage(damage):
