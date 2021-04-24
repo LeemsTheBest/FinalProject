@@ -1,6 +1,6 @@
 extends Node2D
 
-var Player = load("res://Player/Player3.tscn")
+var Player = load("res://Player/Player.tscn")
 onready var player_camera = get_node("/root/Game/Camera2D")
 
 func _ready():

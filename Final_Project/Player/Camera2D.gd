@@ -1,8 +1,8 @@
 extends Camera2D
 
-onready var player = get_node("/root/Game/Player")
 
-func _process(_delta):
-	pass
-#	position.x = player.position.x
-#	position.y = player.position.y
+func _physics_process(_delta):
+	var player = get_node_or_null("/root/Game/Player")
+	if player != null:
+		position = player.position
+
