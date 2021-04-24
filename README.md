@@ -14,6 +14,8 @@ Wyeth: My first major difficulty was making the character shoot while following 
 
 Kidd: It was difficult finding certain sound effect. I had one in particular that required many hoops to jump through due to Godot not being able to accept MP files. Another problem that I encountered was the overall confusion that I had with the group workings of Github. I ended up confusing many of my files, which resulted in some time lost. I also overestimated my abilities to compose music quickly and ended up making music that is subpar compared to my true capabilities. 
 
+Alex: had major trouble with getting a enemy spawner to correctly create enemies so we had to hard code them at the end, also had some trouble at the beginning as we had started two seperate godot projects so I had to combine them into one project and change the file paths of several things.
+
 ## Implementation
 Liam: 3 Levels With Different Themes
 Wyeth: Moveable character with different weapon skins and bullets, muzzle flash and impact explosisions, beginning and end scenes, score and player health. 
@@ -58,7 +60,7 @@ None
 
 Wyeth Michaelsen - Character and Weapon Implementation, Start and End Screens
 
-Alex Puckett - Enemy Implementation
+Alex Puckett - Enemy Implementation, Spawning, and Quality Control
 
 Liam O'Brien - Level Design
 
