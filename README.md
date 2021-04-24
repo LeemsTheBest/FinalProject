@@ -19,7 +19,7 @@ Alex: had major trouble with getting a enemy spawner to correctly create enemies
 ## Implementation
 Liam: 3 Levels With Different Themes
 Wyeth: Moveable character with different weapon skins and bullets, muzzle flash and impact explosions, beginning and end scenes, score and player health. 
-Alex: Enemies and Ai, spawning
+Alex: Enemies and Ai, spawning, proof checking and organization
 Christopher: level music and sound effects
 
 Liam Assets:
