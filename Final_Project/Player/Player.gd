@@ -59,7 +59,8 @@ func take_damage(damage):
 	Global.player_health -= damage
 	if Global.player_health <= 0:
 		queue_free()
-
+		get_tree().change_scene("res://Game2.tscn")
+		
 func shoot():
 	can_shoot = false
 	var bullet1_inst = Bullet1.instance()
