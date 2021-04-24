@@ -14,6 +14,12 @@ Liam: Levels took longer to make than I thought, until I discovered the copy pas
 ## Implementation
 -3 Levels With Different Themes
 
+[7 points] A playable game
+[2] No syntax or runtime errors
+[3] Is a reflection of the theme
+[5] It is obvious that every member contributed
+[2] It is appropriately licensed, and the README.md conforms to the specified format
+[1] Screenshot or gameplay video
 
 
 
