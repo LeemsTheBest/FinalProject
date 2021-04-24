@@ -42,7 +42,12 @@ https://www.youtube.com/watch?v=N6geUSN7aWE&list=PL3V-_hJz2cV8INa2MH5L89YPNMBDjU
 None
 
 # Created by: We'll be dead by daylight
+
 Wyeth Michaelsen- 
+
 Alex Puckett-
+
 Liam O'Brien- Level Design
+
 Christopher Kidd - Music and Sound
+
