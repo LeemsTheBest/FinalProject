@@ -24,6 +24,20 @@ drag_margin_right = 0.0
 drag_margin_bottom = 0.0
 script = ExtResource( 4 )
 
+
+[node name="UI" type="CanvasLayer" parent="."]
+
+[node name="Score" type="Label" parent="UI"]
+margin_top = -2.0
+margin_right = 56.0
+margin_bottom = 31.0
+rect_scale = Vector2( 2, 2 )
+custom_colors/font_color = Color( 0.717647, 0.0235294, 0.0235294, 1 )
+text = "Score: "
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 5 )
 volume_db = -12.866
@@ -35,3 +49,4 @@ script = ExtResource( 2 )
 [node name="Node2D" parent="Node2D" instance=ExtResource( 6 )]
 position = Vector2( 941.804, 2428.51 )
 [connection signal="finished" from="AudioStreamPlayer" to="AudioStreamPlayer" method="_on_AudioStreamPlayer_finished"]
+
