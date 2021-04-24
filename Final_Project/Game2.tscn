@@ -54,7 +54,16 @@ position = Vector2( 941.804, 2428.51 )
 position = Vector2( 18.0208, 543.473 )
 
 [node name="enemy2" parent="Node2D" instance=ExtResource( 4 )]
-position = Vector2( 2558.02, 5935.94 )
+position = Vector2( 8370.3, 7187.19 )
+
+[node name="enemy35" parent="Node2D" instance=ExtResource( 4 )]
+position = Vector2( 10132.8, 6864.28 )
+
+[node name="enemy36" parent="Node2D" instance=ExtResource( 4 )]
+position = Vector2( 13711.7, 7066.1 )
+
+[node name="enemy37" parent="Node2D" instance=ExtResource( 4 )]
+position = Vector2( 15433.8, 7079.55 )
 
 [node name="enemy16" parent="Node2D" instance=ExtResource( 4 )]
 position = Vector2( 9280.96, 7326.89 )
@@ -72,7 +81,7 @@ position = Vector2( 14481.9, 7437.76 )
 position = Vector2( 16114.8, 6812.84 )
 
 [node name="enemy17" parent="Node2D" instance=ExtResource( 4 )]
-position = Vector2( 3424.85, 7236.17 )
+position = Vector2( 11954.9, 7303.44 )
 
 [node name="enemy18" parent="Node2D" instance=ExtResource( 4 )]
 position = Vector2( 6307.55, 7266.41 )
@@ -82,6 +91,33 @@ position = Vector2( 7879.93, 7014.43 )
 
 [node name="enemy20" parent="Node2D" instance=ExtResource( 4 )]
 position = Vector2( 4745.24, 7004.35 )
+
+[node name="enemy38" parent="Node2D" instance=ExtResource( 4 )]
+position = Vector2( 6992.12, 6842.9 )
+
+[node name="enemy44" parent="Node2D" instance=ExtResource( 4 )]
+position = Vector2( 3776.53, 1528.43 )
+
+[node name="enemy45" parent="Node2D" instance=ExtResource( 4 )]
+position = Vector2( 14418.9, 6829.44 )
+
+[node name="enemy46" parent="Node2D" instance=ExtResource( 4 )]
+position = Vector2( 6467.4, 4084.76 )
+
+[node name="enemy39" parent="Node2D" instance=ExtResource( 4 )]
+position = Vector2( 3884.17, 6883.26 )
+
+[node name="enemy40" parent="Node2D" instance=ExtResource( 4 )]
+position = Vector2( 5754.32, 7327.25 )
+
+[node name="enemy41" parent="Node2D" instance=ExtResource( 4 )]
+position = Vector2( 3224.9, 7138.89 )
+
+[node name="enemy42" parent="Node2D" instance=ExtResource( 4 )]
+position = Vector2( 2794.36, 6385.45 )
+
+[node name="enemy43" parent="Node2D" instance=ExtResource( 4 )]
+position = Vector2( 2807.82, 5672.37 )
 
 [node name="enemy21" parent="Node2D" instance=ExtResource( 4 )]
 position = Vector2( 6095.88, 4474.43 )
@@ -111,7 +147,7 @@ position = Vector2( 5854.82, 1279.81 )
 position = Vector2( 5307.06, 1917.37 )
 
 [node name="enemy10" parent="Node2D" instance=ExtResource( 4 )]
-position = Vector2( 3951.13, 1746.75 )
+position = Vector2( 4731.48, 1571.85 )
 
 [node name="enemy11" parent="Node2D" instance=ExtResource( 4 )]
 position = Vector2( 2738.87, 1216.95 )
@@ -119,17 +155,44 @@ position = Vector2( 2738.87, 1216.95 )
 [node name="enemy12" parent="Node2D" instance=ExtResource( 4 )]
 position = Vector2( 2200.09, 1998.18 )
 
+[node name="enemy47" parent="Node2D" instance=ExtResource( 4 )]
+position = Vector2( -235.149, 1433.1 )
+
 [node name="enemy13" parent="Node2D" instance=ExtResource( 4 )]
 position = Vector2( 1284.16, 1351.65 )
 
 [node name="enemy14" parent="Node2D" instance=ExtResource( 4 )]
 position = Vector2( 18.0208, 2016.14 )
 
+[node name="enemy27" parent="Node2D" instance=ExtResource( 4 )]
+position = Vector2( 3758.33, 4612.83 )
+
+[node name="enemy28" parent="Node2D" instance=ExtResource( 4 )]
+position = Vector2( 6839.37, 4397.56 )
+
+[node name="enemy29" parent="Node2D" instance=ExtResource( 4 )]
+position = Vector2( 8413.53, 3993.93 )
+
+[node name="enemy30" parent="Node2D" instance=ExtResource( 4 )]
+position = Vector2( 8198.26, 1948.87 )
+
+[node name="enemy31" parent="Node2D" instance=ExtResource( 4 )]
+position = Vector2( 6893.19, 1491.42 )
+
+[node name="enemy32" parent="Node2D" instance=ExtResource( 4 )]
+position = Vector2( 1820.9, 1343.43 )
+
+[node name="enemy33" parent="Node2D" instance=ExtResource( 4 )]
+position = Vector2( 3489.24, 1935.42 )
+
+[node name="enemy34" parent="Node2D" instance=ExtResource( 4 )]
+position = Vector2( 5278.67, 4047.75 )
+
 [node name="enemy15" parent="Node2D" instance=ExtResource( 4 )]
 position = Vector2( -817.091, 1612.06 )
 
 [node name="Timer" type="Timer" parent="."]
-wait_time = 20.0
+wait_time = 7.0
 autostart = true
 [connection signal="finished" from="AudioStreamPlayer" to="AudioStreamPlayer" method="_on_AudioStreamPlayer_finished"]
 [connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]

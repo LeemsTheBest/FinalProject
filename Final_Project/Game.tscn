@@ -59,7 +59,13 @@ position = Vector2( 2587.57, 443.123 )
 position = Vector2( 2723.33, -2136.4 )
 
 [node name="enemy18" parent="Node2D" instance=ExtResource( 7 )]
-position = Vector2( 2723.33, -2136.4 )
+position = Vector2( 2627.44, -845.504 )
+
+[node name="enemy47" parent="Node2D" instance=ExtResource( 7 )]
+position = Vector2( 2987.37, -638.815 )
+
+[node name="enemy48" parent="Node2D" instance=ExtResource( 7 )]
+position = Vector2( -76.5574, -1285.5 )
 
 [node name="enemy19" parent="Node2D" instance=ExtResource( 7 )]
 position = Vector2( 389.535, 1280.57 )
@@ -70,6 +76,24 @@ position = Vector2( 2847.79, 3396 )
 [node name="enemy21" parent="Node2D" instance=ExtResource( 7 )]
 position = Vector2( 3775.51, 2038.36 )
 
+[node name="enemy41" parent="Node2D" instance=ExtResource( 7 )]
+position = Vector2( 3028, -2564.17 )
+
+[node name="enemy44" parent="Node2D" instance=ExtResource( 7 )]
+position = Vector2( 4672.1, -2490.01 )
+
+[node name="enemy45" parent="Node2D" instance=ExtResource( 7 )]
+position = Vector2( 1372.8, -2083.63 )
+
+[node name="enemy46" parent="Node2D" instance=ExtResource( 7 )]
+position = Vector2( -421.228, -2564.17 )
+
+[node name="enemy42" parent="Node2D" instance=ExtResource( 7 )]
+position = Vector2( 2611.53, 927.77 )
+
+[node name="enemy43" parent="Node2D" instance=ExtResource( 7 )]
+position = Vector2( 4597.77, 2081.07 )
+
 [node name="enemy22" parent="Node2D" instance=ExtResource( 7 )]
 position = Vector2( 6592.62, -2509.75 )
 
@@ -77,13 +101,62 @@ position = Vector2( 6592.62, -2509.75 )
 position = Vector2( -93.7791, -642.993 )
 
 [node name="enemy15" parent="Node2D" instance=ExtResource( 7 )]
-position = Vector2( 517.161, -2521.07 )
+position = Vector2( 494.533, -2521.07 )
+
+[node name="enemy25" parent="Node2D" instance=ExtResource( 7 )]
+position = Vector2( 2346.81, 2286.62 )
+
+[node name="enemy26" parent="Node2D" instance=ExtResource( 7 )]
+position = Vector2( -218.23, 2060.98 )
+
+[node name="enemy27" parent="Node2D" instance=ExtResource( 7 )]
+position = Vector2( -2322.58, 2230.69 )
+
+[node name="enemy28" parent="Node2D" instance=ExtResource( 7 )]
+position = Vector2( -2537.54, -676.934 )
+
+[node name="enemy29" parent="Node2D" instance=ExtResource( 7 )]
+position = Vector2( -2605.42, 284.731 )
+
+[node name="enemy30" parent="Node2D" instance=ExtResource( 7 )]
+position = Vector2( -1089.39, -552.483 )
+
+[node name="enemy31" parent="Node2D" instance=ExtResource( 7 )]
+position = Vector2( 1594.5, -2885.65 )
+rotation = -0.264625
 
 [node name="enemy16" parent="Node2D" instance=ExtResource( 7 )]
 position = Vector2( 415.338, 3294.18 )
 
 [node name="enemy17" parent="Node2D" instance=ExtResource( 7 )]
 position = Vector2( 392.71, 4934.67 )
+
+[node name="enemy32" parent="Node2D" instance=ExtResource( 7 )]
+position = Vector2( 2089.77, 6428.08 )
+
+[node name="enemy37" parent="Node2D" instance=ExtResource( 7 )]
+position = Vector2( 958.395, 2298.57 )
+
+[node name="enemy38" parent="Node2D" instance=ExtResource( 7 )]
+position = Vector2( 370.082, 4335.04 )
+
+[node name="enemy39" parent="Node2D" instance=ExtResource( 7 )]
+position = Vector2( 3334.27, 6495.96 )
+
+[node name="enemy40" parent="Node2D" instance=ExtResource( 7 )]
+position = Vector2( 4397.76, 6337.57 )
+
+[node name="enemy33" parent="Node2D" instance=ExtResource( 7 )]
+position = Vector2( -1100.7, 6439.39 )
+
+[node name="enemy34" parent="Node2D" instance=ExtResource( 7 )]
+position = Vector2( -4381.67, 4335.04 )
+
+[node name="enemy35" parent="Node2D" instance=ExtResource( 7 )]
+position = Vector2( -3114.54, 4617.88 )
+
+[node name="enemy36" parent="Node2D" instance=ExtResource( 7 )]
+position = Vector2( -2017.11, 3961.69 )
 
 [node name="enemy3" parent="Node2D" instance=ExtResource( 7 )]
 position = Vector2( -2458.34, 1755.51 )
@@ -95,10 +168,10 @@ position = Vector2( 4295.94, 3203.67 )
 position = Vector2( 4940.82, 5183.57 )
 
 [node name="enemy6" parent="Node2D" instance=ExtResource( 7 )]
-position = Vector2( 1422.26, 6133.92 )
+position = Vector2( 539.789, 6507.27 )
 
 [node name="enemy7" parent="Node2D" instance=ExtResource( 7 )]
-position = Vector2( 3141.94, 6428.08 )
+position = Vector2( 4601.41, 4538.69 )
 
 [node name="enemy8" parent="Node2D" instance=ExtResource( 7 )]
 position = Vector2( -297.426, 6371.51 )
@@ -122,7 +195,7 @@ position = Vector2( -1960.54, -507.228 )
 position = Vector2( 1661.84, 2033.82 )
 
 [node name="Timer" type="Timer" parent="."]
-wait_time = 20.0
+wait_time = 7.0
 autostart = true
 [connection signal="finished" from="Level1 music" to="Level1 music" method="_on_AudioStreamPlayer_finished"]
 [connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]
