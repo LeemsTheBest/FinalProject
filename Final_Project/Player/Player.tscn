@@ -1,8 +1,23 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://Assets/Char-needed/survivor-shoot_handgun_1.png" type="Texture" id=1]
 [ext_resource path="res://Player/Player.gd" type="Script" id=2]
 [ext_resource path="res://Assets/Char-needed/shotOrange.png" type="Texture" id=3]
+[ext_resource path="res://Player/Health.gd" type="Script" id=4]
+
+[sub_resource type="GDScript" id=4]
+script/source = "extends Sprite
+
+
+func _ready():
+	pass
+"
+
+[sub_resource type="StyleBoxFlat" id=2]
+bg_color = Color( 0.137255, 0.701961, 0, 1 )
+
+[sub_resource type="StyleBoxFlat" id=3]
+bg_color = Color( 1, 1, 1, 1 )
 
 [sub_resource type="Animation" id=1]
 resource_name = "MuzzleFlash"
@@ -43,6 +58,21 @@ script = ExtResource( 2 )
 [node name="Sprite" type="Sprite" parent="."]
 scale = Vector2( 0.5, 0.5 )
 texture = ExtResource( 1 )
+script = SubResource( 4 )
+
+[node name="Health" type="ProgressBar" parent="Sprite"]
+margin_left = -104.65
+margin_top = -111.785
+margin_right = 95.3497
+margin_bottom = -86.7854
+custom_styles/fg = SubResource( 2 )
+custom_styles/bg = SubResource( 3 )
+value = 100.0
+percent_visible = false
+script = ExtResource( 4 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
 scale = Vector2( 0.5, 0.5 )

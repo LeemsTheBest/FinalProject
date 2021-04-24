@@ -10,7 +10,7 @@ var bullet_delay = 0.25
 var can_shoot = true
 onready var end_of_gun = $Endofgun
 onready var animation_player = $AnimationPlayer
-
+var Health = 100
 var Bullet1 = load("res://Bullets/Bullet1.tscn")
 
 
@@ -68,4 +68,7 @@ func get_input():
 		input_vector += Vector2(0,1)
 	
 	return input_vector
-	
+func take_damage(damage):
+	Health -= damage
+	if Health <= 0:
+		queue_free()

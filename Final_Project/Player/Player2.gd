@@ -12,6 +12,7 @@ var bullet_delay = 0.05
 var can_shoot = true
 onready var animation_player = $AnimationPlayer
 onready var end_of_gun = $Endofgun
+var Health = 100
 #onready var Bullets = get_node("/root/Game/Bullets")
 var Bullet2 = load("res://Bullets/Bullet2.tscn")
 
@@ -75,4 +76,8 @@ func get_input():
 	
 func on_timeout_complete():
 	can_shoot = true
+func take_damage(damage):
+	Health -= damage
+	if Health <= 0:
+		queue_free()
 	
