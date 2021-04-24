@@ -10,6 +10,7 @@ var max_speed = 3
 var timer = null
 var bullet_delay = 0.25
 var can_shoot = true
+var Health = 100
 #Instantiating animation player for muzzle flash.
 onready var animation_player = $AnimationPlayer
 onready var end_of_gun = $Endofgun
@@ -83,4 +84,9 @@ func get_input():
 	
 func on_timeout_complete():
 	can_shoot = true
-	
+
+
+func take_damage(damage):
+	Health -= damage
+	if Health <= 0:
+		queue_free()	
