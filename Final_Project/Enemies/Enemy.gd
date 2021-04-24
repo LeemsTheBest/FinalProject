@@ -1,4 +1,4 @@
-extends Area2D
+extends KinematicBody2D
 
 var speed = 1.5
 onready var Player_detect = $PlayerDetection

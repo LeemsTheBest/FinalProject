@@ -6,11 +6,11 @@ extends KinematicBody2D
 
 var velocity = Vector2.ZERO
 var speed = 0.5
-var max_speed = 3
+var max_speed = 7
 var timer = null
 var bullet_delay = 0.25
 var can_shoot = true
-var Health = 100
+
 #Instantiating animation player for muzzle flash.
 onready var animation_player = $AnimationPlayer
 onready var end_of_gun = $Endofgun
@@ -26,23 +26,34 @@ func _ready():
 	timer.set_wait_time(bullet_delay)
 	timer.connect("timeout",self,"on_timeout_complete")
 	add_child(timer)
-func _physics_process(_delta):
-	#Player movement
-	velocity += get_input()*speed
-	var current_speed = velocity.length()
-	position += velocity
-	velocity = velocity.normalized() * clamp(current_speed, -max_speed, max_speed)
-	velocity = move_and_slide(velocity, Vector2.UP, true)
-	#Player aim
-	look_at(get_global_mouse_position())
+func _physics_process(delta):
+	var input_vector = Vector2.ZERO
+	if Input.is_action_pressed("left"):
+		input_vector += Vector2(-1,0)
+	if Input.is_action_pressed("right"):
+		input_vector += Vector2(1,0)
+	if Input.is_action_pressed("up"):
+		input_vector += Vector2(0,-1)
+	if Input.is_action_pressed("down"):
+		input_vector += Vector2(0,1)
+	input_vector = input_vector.normalized()
+	move_and_collide(input_vector*max_speed, delta)
+	
+	
+	
+	
+	
+	
+	
 	#Player shoot. Added a timer for gun so bullets can't be spammed
 	#When input is pressed the can_shoot val turns false disallowing the gun to 
 	#be fired again until timer is up.
+	look_at(get_global_mouse_position())
 	if (Input.is_action_pressed("shoot") && can_shoot):
 		shoot()
 	#Starts timer after bullet is fired to prevent shooting until timer is up
 		timer.start()
-
+	return input_vector
 	
 	
 func shoot():
@@ -69,24 +80,13 @@ func shoot():
 	animation_player.play("MuzzleFlash")
 			
 	
-func get_input():
-	var input_vector = Vector2.ZERO
-	if Input.is_action_pressed("left"):
-		input_vector += Vector2(-1,0)
-	if Input.is_action_pressed("right"):
-		input_vector += Vector2(1,0)
-	if Input.is_action_pressed("up"):
-		input_vector += Vector2(0,-1)
-	if Input.is_action_pressed("down"):
-		input_vector += Vector2(0,1)
-	
-	return input_vector
+
 	
 func on_timeout_complete():
 	can_shoot = true
 
 
 func take_damage(damage):
-	Health -= damage
-	if Health <= 0:
+	Global.player_health -= damage
+	if Global.player_health <= 0:
 		queue_free()	

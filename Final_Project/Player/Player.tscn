@@ -5,7 +5,7 @@
 [ext_resource path="res://Assets/Char-needed/shotOrange.png" type="Texture" id=3]
 [ext_resource path="res://Player/Health.gd" type="Script" id=4]
 
-[sub_resource type="GDScript" id=4]
+[sub_resource type="GDScript" id=1]
 script/source = "extends Sprite
 
 
@@ -19,8 +19,7 @@ bg_color = Color( 0.137255, 0.701961, 0, 1 )
 [sub_resource type="StyleBoxFlat" id=3]
 bg_color = Color( 1, 1, 1, 1 )
 
-[sub_resource type="Animation" id=1]
-resource_name = "MuzzleFlash"
+[sub_resource type="Animation" id=4]
 length = 0.05
 step = 0.05
 tracks/0/type = "value"
@@ -50,21 +49,22 @@ tracks/1/keys = {
 
 [node name="Player" type="KinematicBody2D"]
 position = Vector2( 300, 300 )
-scale = Vector2( 0.5, 0.5 )
+scale = Vector2( 0.3, 0.3 )
 collision_layer = 2
 collision_mask = 2
 script = ExtResource( 2 )
 
 [node name="Sprite" type="Sprite" parent="."]
+position = Vector2( 2.6, -26.697 )
 scale = Vector2( 0.5, 0.5 )
 texture = ExtResource( 1 )
-script = SubResource( 4 )
+script = SubResource( 1 )
 
 [node name="Health" type="ProgressBar" parent="Sprite"]
-margin_left = -104.65
-margin_top = -111.785
-margin_right = 95.3497
-margin_bottom = -86.7854
+margin_left = -92.8994
+margin_top = -114.717
+margin_right = 107.1
+margin_bottom = -89.7181
 custom_styles/fg = SubResource( 2 )
 custom_styles/bg = SubResource( 3 )
 value = 100.0
@@ -75,18 +75,19 @@ __meta__ = {
 }
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+position = Vector2( 2.66968, -26.6969 )
 scale = Vector2( 0.5, 0.5 )
 polygon = PoolVector2Array( -13.5, -69, -6.5, -67, -6.5, -65.5, 9.5, -52.5, 9.5, -48, 8.8, -46.5, 35.5, -47.5, 35.5, -46, 49.5, -42, 49.5, -40.6, 68.5, -29.7, 68.5, -28.4, 83.5, -12.3, 83.5, 11.8, 74, 40.2, 75.6, 42.5, 97.8, 42.5, 102.5, 44.1, 102.5, 45.4, 108.5, 49.4, 108.5, 61.5, 106.2, 61.5, 100.2, 66.5, 75.5, 66.5, 62.2, 76.5, 58.4, 76.5, 43.5, 74.8, 11.8, 85.5, 5.7, 85.5, -19.4, 88.5, -28.6, 88.5, -53.5, 86.3, -53.5, 84.7, -73.5, 74.7, -73.5, 73.2, -87.5, 56.2, -87.5, 44.4, -86.4, 29.5, -84.9, 29.5, -82.3, 21.5, -85.6, 21.5, -94.5, 7.1, -94.5, 3.8, -97.5, -5.2, -97.5, -8.3, -92.7, -13.1, -95.5, -16.8, -95.5, -18.7, -93.2, -31.5, -91.8, -31.5, -86.8, -42.5, -85.4, -42.5, -78.4, -50.5, -76.2, -50.5, -60.3, -64.5, -58, -64.5, -47.5, -69.7, -47.5, -71.5, -25.5, -71.5, -25.5, -69.5, -22.8, -67.5, -22, -67.5, -13.5, -71.7 )
 
 [node name="Endofgun" type="Position2D" parent="."]
-position = Vector2( 64.0312, 27.4734 )
+position = Vector2( 68.7032, 1.44398 )
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
-anims/MuzzleFlash = SubResource( 1 )
+anims/MuzzleFlash = SubResource( 4 )
 
 [node name="MuzzleFlash" type="Sprite" parent="."]
 visible = false
-position = Vector2( 65.4089, 27.6019 )
+position = Vector2( 73.187, 1.08536 )
 rotation = -1.5708
 scale = Vector2( 0.4, 1 )
 texture = ExtResource( 3 )
