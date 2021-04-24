@@ -12,6 +12,7 @@ Liam: Levels took longer to make than I thought, until I discovered the copy pas
 
 Wyeth: My first major difficulty was making the character shoot while following the mouse. I was able to have a player shoot in a straight line but struggled to get the player to shoot when my mouse pointed. Another difficulty was figuring out how to rotate the bullets so that they pointed towards my mouse every time they shot. Also, adding a timer to the gun's fire rate took some time to tweak and fully instantiate as it shot the bullets.
 
+Kidd: It was difficult finding certain sound effect. I had one in particular that required many hoops to jump through due to Godot not being able to accept MP files. Another problem that I encountered was the overall confusion that I had with the group workings of Github. I ended up confusing many of my files, which resulted in some time lost. I also overestimated my abilities to compose music quickly and ended up making music that is subpar compared to my true capabilities. 
 
 ## Implementation
 Liam: 3 Levels With Different Themes
@@ -35,7 +36,7 @@ https://www.youtube.com/watch?v=6_xTDu6yvCY&list=PL3V-_hJz2cV8INa2MH5L89YPNMBDjU
 
 https://www.youtube.com/watch?v=N6geUSN7aWE&list=PL3V-_hJz2cV8INa2MH5L89YPNMBDjUEMx&index=3 UI
 
-Christopher Kidd assets/sources:
+Kidd assets/sources:
 
 https://www.reasonstudios.com/ - Music
 
