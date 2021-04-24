@@ -19,14 +19,23 @@ Liam: Levels took longer to make than I thought, until I discovered the copy pas
 
 ## References
 Liam Assets:
-Top Down TileSet by https://twitter.com/CamTatz
+
+Top Down TileSet (https://opengameart.org/content/top-down-asset-pack-1-ctatz) by https://twitter.com/CamTatz
+
 Wyeth assets/Sources:
+
 https://opengameart.org/content/top-down-assets - Character model
+
 https://kaylousberg.itch.io/gun-assets?download - Bullets
+
 https://godotengine.org/qa/82059/top-down-camera - Camera
+
 https://www.youtube.com/watch?v=cei9BZMzVLY- Shooting
+
 https://www.youtube.com/watch?v=6_xTDu6yvCY&list=PL3V-_hJz2cV8INa2MH5L89YPNMBDjUEMx&index=4 Health Bar
+
 https://www.youtube.com/watch?v=N6geUSN7aWE&list=PL3V-_hJz2cV8INa2MH5L89YPNMBDjUEMx&index=3 UI
+
 
 
 ## Future Development
