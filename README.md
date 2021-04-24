@@ -41,6 +41,10 @@ https://www.audacityteam.org/ - Sound effects (1)
 
 https://soundbible.com/ - Sound effects (2)
 
+Alex Puckett assets/sources:
+
+https://docs.godotengine.org/en/stable/tutorials/2d/2d_movement.html - enemy movement
+
 ## References
 Jason Francis
 
@@ -49,11 +53,11 @@ None
 
 # Created by: We'll be dead by daylight
 
-Wyeth Michaelsen- 
+Wyeth Michaelsen - Character and Weapon Implementation, Start and End Screens
 
-Alex Puckett-
+Alex Puckett - Enemy Implementation
 
-Liam O'Brien- Level Design
+Liam O'Brien - Level Design
 
 Christopher Kidd - Music and Sound
 
