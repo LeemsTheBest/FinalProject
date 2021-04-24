@@ -6,7 +6,7 @@
 [ext_resource path="res://Enemies/Enemy1.tscn" type="PackedScene" id=4]
 [ext_resource path="res://Levels/Level3.tscn" type="PackedScene" id=5]
 [ext_resource path="res://Enemies/Spawner.tscn" type="PackedScene" id=6]
-[ext_resource path="res://Assets/Level 1 (WAVE).wav" type="AudioStream" id=7]
+[ext_resource path="res://Assets/Level3_music.wav" type="AudioStream" id=7]
 
 [node name="Game" type="Node2D"]
 script = ExtResource( 2 )
@@ -15,7 +15,7 @@ script = ExtResource( 2 )
 position = Vector2( 6387.67, 1886.46 )
 scale = Vector2( 2, 2 )
 current = true
-zoom = Vector2( 0.7, 0.7 )
+zoom = Vector2( 0.8, 0.8 )
 smoothing_speed = 4.0
 drag_margin_left = 0.0
 drag_margin_top = 0.0
