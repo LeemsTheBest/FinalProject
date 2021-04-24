@@ -4,13 +4,13 @@ extends KinematicBody2D
 
 var velocity = Vector2.ZERO
 var speed = 0.5
-var max_speed = 4
+var max_speed = 6
 var timer = null
 var bullet_delay = 0.25
 var can_shoot = true
 onready var end_of_gun = $Endofgun
 onready var animation_player = $AnimationPlayer
-var Health = 100
+
 var Bullet1 = load("res://Bullets/Bullet1.tscn")
 
 
@@ -69,6 +69,6 @@ func get_input():
 	
 	return input_vector
 func take_damage(damage):
-	Health -= damage
-	if Health <= 0:
+	Global.player_health -= damage
+	if Global.player_health <= 0:
 		queue_free()

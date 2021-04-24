@@ -2,7 +2,7 @@ extends Camera2D
 
 
 func _physics_process(_delta):
-	var player = get_node_or_null("/root/Game/Player")
+	var player = Global.cur_player_instance
 	if player != null:
 		position = player.position
 

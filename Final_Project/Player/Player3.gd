@@ -6,11 +6,11 @@ extends KinematicBody2D
 
 var velocity = Vector2.ZERO
 var speed = 0.5
-var max_speed = 3
+var max_speed = 6
 var timer = null
 var bullet_delay = 0.25
 var can_shoot = true
-var Health = 100
+
 #Instantiating animation player for muzzle flash.
 onready var animation_player = $AnimationPlayer
 onready var end_of_gun = $Endofgun
@@ -87,6 +87,6 @@ func on_timeout_complete():
 
 
 func take_damage(damage):
-	Health -= damage
-	if Health <= 0:
+	Global.player_health -= damage
+	if Global.player_health <= 0:
 		queue_free()	
