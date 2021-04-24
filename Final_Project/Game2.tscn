@@ -50,6 +50,86 @@ script = ExtResource( 7 )
 [node name="Node2D" parent="Node2D" instance=ExtResource( 6 )]
 position = Vector2( 941.804, 2428.51 )
 
-[node name="Node2D2" parent="Node2D" instance=ExtResource( 4 )]
+[node name="enemy1" parent="Node2D" instance=ExtResource( 4 )]
 position = Vector2( 18.0208, 543.473 )
+
+[node name="enemy2" parent="Node2D" instance=ExtResource( 4 )]
+position = Vector2( 2558.02, 5935.94 )
+
+[node name="enemy16" parent="Node2D" instance=ExtResource( 4 )]
+position = Vector2( 9280.96, 7326.89 )
+
+[node name="enemy23" parent="Node2D" instance=ExtResource( 4 )]
+position = Vector2( 11085.2, 7145.46 )
+
+[node name="enemy24" parent="Node2D" instance=ExtResource( 4 )]
+position = Vector2( 12677.7, 7004.35 )
+
+[node name="enemy25" parent="Node2D" instance=ExtResource( 4 )]
+position = Vector2( 14481.9, 7437.76 )
+
+[node name="enemy26" parent="Node2D" instance=ExtResource( 4 )]
+position = Vector2( 16114.8, 6812.84 )
+
+[node name="enemy17" parent="Node2D" instance=ExtResource( 4 )]
+position = Vector2( 3424.85, 7236.17 )
+
+[node name="enemy18" parent="Node2D" instance=ExtResource( 4 )]
+position = Vector2( 6307.55, 7266.41 )
+
+[node name="enemy19" parent="Node2D" instance=ExtResource( 4 )]
+position = Vector2( 7879.93, 7014.43 )
+
+[node name="enemy20" parent="Node2D" instance=ExtResource( 4 )]
+position = Vector2( 4745.24, 7004.35 )
+
+[node name="enemy21" parent="Node2D" instance=ExtResource( 4 )]
+position = Vector2( 6095.88, 4474.43 )
+
+[node name="enemy22" parent="Node2D" instance=ExtResource( 4 )]
+position = Vector2( 4432.78, 4474.43 )
+
+[node name="enemy3" parent="Node2D" instance=ExtResource( 4 )]
+position = Vector2( 3082.15, 4998.55 )
+
+[node name="enemy4" parent="Node2D" instance=ExtResource( 4 )]
+position = Vector2( 7627.94, 4293 )
+
+[node name="enemy5" parent="Node2D" instance=ExtResource( 4 )]
+position = Vector2( 8620.57, 3452.9 )
+
+[node name="enemy6" parent="Node2D" instance=ExtResource( 4 )]
+position = Vector2( 8827.1, 2240.64 )
+
+[node name="enemy7" parent="Node2D" instance=ExtResource( 4 )]
+position = Vector2( 7363.41, 1926.35 )
+
+[node name="enemy8" parent="Node2D" instance=ExtResource( 4 )]
+position = Vector2( 5854.82, 1279.81 )
+
+[node name="enemy9" parent="Node2D" instance=ExtResource( 4 )]
+position = Vector2( 5307.06, 1917.37 )
+
+[node name="enemy10" parent="Node2D" instance=ExtResource( 4 )]
+position = Vector2( 3951.13, 1746.75 )
+
+[node name="enemy11" parent="Node2D" instance=ExtResource( 4 )]
+position = Vector2( 2738.87, 1216.95 )
+
+[node name="enemy12" parent="Node2D" instance=ExtResource( 4 )]
+position = Vector2( 2200.09, 1998.18 )
+
+[node name="enemy13" parent="Node2D" instance=ExtResource( 4 )]
+position = Vector2( 1284.16, 1351.65 )
+
+[node name="enemy14" parent="Node2D" instance=ExtResource( 4 )]
+position = Vector2( 18.0208, 2016.14 )
+
+[node name="enemy15" parent="Node2D" instance=ExtResource( 4 )]
+position = Vector2( -817.091, 1612.06 )
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 20.0
+autostart = true
 [connection signal="finished" from="AudioStreamPlayer" to="AudioStreamPlayer" method="_on_AudioStreamPlayer_finished"]
+[connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]

@@ -12,3 +12,42 @@ func _ready():
 	add_child(Player_inst)
 	Global.reset()
 	get_node("/root/Game/UI/Score").text = "Score: " +str(Global.score)
+
+
+func _on_Timer_timeout():
+	var Enemy_inst = Global.cur_enemy.instance()
+	Enemy_inst.position.x = 5770
+	Enemy_inst.position.y = 1935
+	add_child(Enemy_inst)
+	Global.num_enemies += 1
+	Enemy_inst = Global.cur_enemy.instance()
+	Enemy_inst.position.x = 7550
+	Enemy_inst.position.y = 1935
+	add_child(Enemy_inst)
+	Global.num_enemies += 1
+	Enemy_inst = Global.cur_enemy.instance()
+	Enemy_inst.position.x = 9575
+	Enemy_inst.position.y = 1935
+	add_child(Enemy_inst)
+	Global.num_enemies += 1
+	Enemy_inst = Global.cur_enemy.instance()
+	Enemy_inst.position.x = 3575
+	Enemy_inst.position.y = 1935
+	add_child(Enemy_inst)
+	Global.num_enemies += 1
+	Enemy_inst = Global.cur_enemy.instance()
+	Enemy_inst.position.x = 4700
+	Enemy_inst.position.y = 4670
+	add_child(Enemy_inst)
+	Global.num_enemies += 1
+	Enemy_inst = Global.cur_enemy.instance()
+	Enemy_inst.position.x = 8550
+	Enemy_inst.position.y = 4650
+	add_child(Enemy_inst)
+	Global.num_enemies += 1
+	Enemy_inst = Global.cur_enemy.instance()
+	Enemy_inst.position.x = 6610
+	Enemy_inst.position.y = 5940
+	add_child(Enemy_inst)
+	Global.num_enemies += 1
+

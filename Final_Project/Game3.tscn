@@ -47,11 +47,55 @@ script = ExtResource( 1 )
 
 [node name="Node2D" type="Node2D" parent="."]
 
-[node name="Node2D" parent="Node2D" instance=ExtResource( 6 )]
-position = Vector2( 941.804, 2428.51 )
+[node name="spawner2" parent="Node2D" instance=ExtResource( 6 )]
+position = Vector2( 3458.84, 1942.01 )
 
-[node name="Node2D2" parent="Node2D" instance=ExtResource( 4 )]
-position = Vector2( 6374.39, 2603.11 )
+[node name="spawner" parent="Node2D" instance=ExtResource( 6 )]
+position = Vector2( 9358.68, 1930.7 )
+
+[node name="enemy1" parent="Node2D" instance=ExtResource( 4 )]
+position = Vector2( 5136.24, 2187 )
+
+[node name="enemy2" parent="Node2D" instance=ExtResource( 4 )]
+position = Vector2( 8552.19, 1282.21 )
+
+[node name="enemy3" parent="Node2D" instance=ExtResource( 4 )]
+position = Vector2( 9361.12, 3194.23 )
+
+[node name="enemy4" parent="Node2D" instance=ExtResource( 4 )]
+position = Vector2( 7335.97, 3279.08 )
+
+[node name="enemy5" parent="Node2D" instance=ExtResource( 4 )]
+position = Vector2( 7185.51, 1999.89 )
+
+[node name="enemy6" parent="Node2D" instance=ExtResource( 4 )]
+position = Vector2( 4135.19, 1498.21 )
+
+[node name="enemy7" parent="Node2D" instance=ExtResource( 4 )]
+position = Vector2( 8989.55, 5915.64 )
+
+[node name="enemy11" parent="Node2D" instance=ExtResource( 4 )]
+position = Vector2( 6925.55, 5907.64 )
+
+[node name="enemy12" parent="Node2D" instance=ExtResource( 4 )]
+position = Vector2( 4933.55, 5891.64 )
+
+[node name="enemy8" parent="Node2D" instance=ExtResource( 4 )]
+position = Vector2( 3489.31, 4761.17 )
+
+[node name="enemy9" parent="Node2D" instance=ExtResource( 4 )]
+position = Vector2( 5525.77, 3935.27 )
+
+[node name="enemy10" parent="Node2D" instance=ExtResource( 4 )]
+position = Vector2( 3376.17, 3165.94 )
+
+[node name="enemy13" parent="Node2D" instance=ExtResource( 4 )]
+position = Vector2( 8266.19, 4631.04 )
 
 [node name="Node" type="Node" parent="."]
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 20.0
+autostart = true
 [connection signal="finished" from="AudioStreamPlayer" to="AudioStreamPlayer" method="_on_AudioStreamPlayer_finished"]
+[connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]

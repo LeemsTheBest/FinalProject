@@ -20,9 +20,6 @@ func _on_PlayerDetection_body_entered(body):
 	if body == Global.cur_player_instance:
 		aggro = true
 
-func _on_PlayerDetection_body_exited(body):
-	aggro = false
-
 func take_damage(damage):
 	hp -= damage
 	aggro = true
