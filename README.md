@@ -11,6 +11,8 @@ The goal of this top-down 2D shooter is to survive the waves of oncoming Jasons 
 Liam: Levels took longer to make than I thought, until I discovered the copy paste function a couple hours before the deadline, when I only had one more level to make.
 
 Wyeth: My first major difficulty was making the character shoot while following the mouse. I was able to have a player shoot in a straight line but struggled to get the player to shoot when my mouse pointed. Another difficulty was figuring out how to rotate the bullets so that they pointed towards my mouse every time they shot. Also, adding a timer to the gun's fire rate took some time to tweak and fully instantiate as it shot the bullets.
+
+
 ## Implementation
 Liam: 3 Levels With Different Themes
 Wyeth: Moveable character with different weapon skins and bullets, muzzle flash and impact explosisions, beginning and end scenes, score and player health. 
