@@ -61,10 +61,10 @@ texture = ExtResource( 1 )
 script = SubResource( 1 )
 
 [node name="Health" type="ProgressBar" parent="Sprite"]
-margin_left = -96.6409
-margin_top = -118.459
-margin_right = 103.359
-margin_bottom = -93.4597
+margin_left = -92.8994
+margin_top = -114.717
+margin_right = 107.1
+margin_bottom = -89.7181
 custom_styles/fg = SubResource( 2 )
 custom_styles/bg = SubResource( 3 )
 value = 100.0
