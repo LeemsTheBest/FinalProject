@@ -1,7 +1,7 @@
 [gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://Game.gd" type="Script" id=1]
-[ext_resource path="res://Music/Level1 music.gd" type="Script" id=2]
+[ext_resource path="res://Level1 music.gd" type="Script" id=2]
 [ext_resource path="res://Levels/Level1.tscn" type="PackedScene" id=3]
 [ext_resource path="res://Player/Camera2D.gd" type="Script" id=4]
 [ext_resource path="res://Assets/Level 1 (WAVE).wav" type="AudioStream" id=5]
@@ -23,9 +23,9 @@ drag_margin_right = 0.0
 drag_margin_bottom = 0.0
 script = ExtResource( 4 )
 
-[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+[node name="Level1 music" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 5 )
-volume_db = -12.866
+volume_db = -6.433
 autoplay = true
 script = ExtResource( 2 )
-[connection signal="finished" from="AudioStreamPlayer" to="AudioStreamPlayer" method="_on_AudioStreamPlayer_finished"]
+[connection signal="finished" from="Level1 music" to="Level1 music" method="_on_AudioStreamPlayer_finished"]
