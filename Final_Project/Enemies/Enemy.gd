@@ -29,6 +29,7 @@ func take_damage(damage):
 	if (hp <= 0):
 		queue_free()
 		Global.num_enemies -= 1
+		Global.update_score(score)
 
 func _on_AttackRadius_body_entered(body):
 	if body == Global.cur_player_instance:
